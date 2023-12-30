@@ -335,8 +335,22 @@ a{display:inline-block}
     .demo-1__gallery__figure:nth-child(9){height:100rem;left:110rem;top:450rem;width:70rem}
     .demo-1__gallery__figure:nth-child(10){height:50rem;left:20rem;right:auto;top:440rem;width:55rem}
     .demo-1__gallery__figure:nth-child(11){height:70rem;left:auto;right:0;top:570rem;width:70rem}
-    .demo-1__gallery__figure:nth-child(12){left:0;top:515rem;height:100rem;width:90rem}
+    .demo-1__gallery__figure:nth-child(12){left:0;top:515rem;height:100rem;width:90rem;}
 }
 
-.demo-1__gallery__image{height:100%;left:0;object-fit:cover;position:absolute;top:0;width:100%}
+.demo-1__gallery__image{
+    height:100%;
+    left:0;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    width:100%;
+    border: 10px solid #fff;
+}
 
+img {
+    
+    border: 10px solid #fff;
+}
+
+.demo-1__gallery__image { border: 10px solid #fff;}
