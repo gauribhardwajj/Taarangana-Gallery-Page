@@ -33,7 +33,7 @@ body{
 
 body:after{
     animation:grain 6s steps(10) infinite;
-    background-image:url(bg.png);
+    background-image:url(images/grain.png);
     background-repeat:repeat;
     content:'';
     height:300%;
@@ -48,7 +48,7 @@ body:after{
     z-index:3;}
 
 .loaded body:after{
-    opacity:0.06;
+    opacity:0.08;
 }
 
 body #cdawrap{
