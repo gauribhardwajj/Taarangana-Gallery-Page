@@ -1,12 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Page</title>
+  <!-- font -->
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./Team.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1>Teams Page</h1>
-    
+  <!-- home page image -->
+  <div class="imagecontainer">
+    <div class="wrapper-heading">
+      <div class="header-wrap">
+        <h1 style="transform: perspective(200px) rotateX(10deg)">MEET<br><br>OUR TEAM</h1>
+      </div>
+    </div>
+
+    <button id="start-btn-wrap">
+      <a href="#" id="start-btn">START</a>
+    </button>
+  </div>
+  <div>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+  <div class="teams-container" id="teams">
+    <div class="grid-items team">
+      <!-- Website Team -->
+
+      <h1>WebD Team</h1>
+      <!-- here comes cards -->
+      <div class="card-team card-section-webd container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 " style=" width: 15rem;height:21rem;">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?pizza"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">
+              Card title
+            </h5>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?icecream"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">
+              Card title
+            </h5>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?drinks"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">
+              Card title
+            </h5>
+          </div>
+        </div>
+      </div>
+      <!-- HR Team -->
+
+      <h1>HR Team</h1>
+      <div class="card-team card-section-hr container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?cookie"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <!-- style="z-index: -2" -->
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- PR Team -->
+
+      <h1>PR Team</h1>
+      <div class="card-team card-section-pr container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Sponsorship Team -->
+
+      <h1>Sponsorship Team</h1>
+      <div class="card-team card-section-sponsi container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Editorial Team -->
+
+      <h1>Editorial Team</h1>
+      <div class="card-team card-section-edit container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 animate-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?cars"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- EM Team -->
+
+      <h1>EM Team</h1>
+      <div class="card-team card-section-em container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Creative Team -->
+
+      <h1>Creative Team</h1>
+      <div class="card-team card-section-creative container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- HR Team -->
+
+      <h1>HR Team</h1>
+      <div class="card-team card-section-hr container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border animate-border  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Media Team -->
+
+      <h1>Media Team</h1>
+      <div class="card-team card-section-media container-fluid d-flex flex-wrap justify-content-around">
+        <div class="card m-3 gradient-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?coffee"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 spiral-border animate-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?fruits"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+        <div class="card m-3 animate-border" style="width: 15rem;height:21rem">
+          <img class="card-img-top" height="300px" src="https://source.unsplash.com/1268x700/?mountain"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title text-center minecraft-font">Card title</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container" class="grid-items" touch-action="none"></div>
+  </div>
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/ccapture.js"></script>
+  <script src="./Team.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!--JS link to AOS library-->
 </body>
+
 </html>
