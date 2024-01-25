@@ -3,74 +3,74 @@ const timeline = [
 	{
 		year: 2023,
 		month: 9,
-		month_name: "2023",
-		title: "Taarangana 2023"
+		month_name: "Events",
+		title: "Events"
 	},
 	{
 		year: 2022,
 		month: 6,
-		month_name: "2022",
-		title: "Taarangana 2022"
+		month_name: "Gallery",
+		title: "Gallery"
 	},
 	{
 		year: 2021,
 		month: 10,
-		month_name: "2021",
-		title: "Taarangana 2021"
+		month_name: "Sponsors",
+		title: "Sponsors"
 	},
 	{
 		year: 2020,
 		month: 10,
-		month_name: "2020",
-		title: "Taarangana 2020"
+		month_name: "Team",
+		title: "Team"
 	},
 	{ 
 		year: 2019, 
 	    month: 4, 
-		month_name: "2019", 
-		title: "Taarangana 2019" 
-	},
-	{
-		year: 2018,
-		month: 11,
-		month_name: "2018",
-		title: "Taarangana 2018"
-	},
-	{
-		year: 2017,
-		month: 10,
-		month_name: "2017",
-		title: "Taarangana 2017"
-	},
-	{
-		year: 2016,
-		month: 8,
-		month_name: "2016",
-		title: "Taarangana 2016"
-	},
-	{ 
-		year: 2015, 
-		month: 6, 
-		month_name: "2015", 
-		title: "Taarangana 2015" 
-	},
-	{
-		year: 2014,
-		month: 7,
-		month_name: "2014",
-		title: "Taarangana 2014"
-	},
-	{
-		year: 2013,
-		month: 5,
-		month_name: "2013",
-		title: "Taarangana 2013"
-	},
-	{
-		year: 2012,
-		month: 11,
-		month_name: "2012",
-		title: "Taarangana 2012"
+		month_name: "Vikisit Bharat@2047", 
+		title: "Vikisit Bharat@2047" 
+	// },
+	// {
+	// 	year: 2018,
+	// 	month: 11,
+	// 	month_name: "2018",
+	// 	title: "Taarangana 2018"
+	// },
+	// {
+	// 	year: 2017,
+	// 	month: 10,
+	// 	month_name: "2017",
+	// 	title: "Taarangana 2017"
+	// },
+	// {
+	// 	year: 2016,
+	// 	month: 8,
+	// 	month_name: "2016",
+	// 	title: "Taarangana 2016"
+	// },
+	// { 
+	// 	year: 2015, 
+	// 	month: 6, 
+	// 	month_name: "2015", 
+	// 	title: "Taarangana 2015" 
+	// },
+	// {
+	// 	year: 2014,
+	// 	month: 7,
+	// 	month_name: "2014",
+	// 	title: "Taarangana 2014"
+	// },
+	// {
+	// 	year: 2013,
+	// 	month: 5,
+	// 	month_name: "2013",
+	// 	title: "Taarangana 2013"
+	// },
+	// {
+	// 	year: 2012,
+	// 	month: 11,
+	// 	month_name: "2012",
+	// 	title: "Taarangana 2012"
 	}
 ];
 
@@ -82,6 +82,8 @@ const eventsContainer = document.getElementById("events");
 let currentIndex = -1;
 let currentPipe;
 let int1;
+
+//const linking=document.getElementsByClassName("event active");
 
 // click handler
 const pipeHandler = () => {
@@ -125,7 +127,18 @@ const pipeHandler = () => {
 			mario.classList.remove(`walk-${dir}`);
 			mario.classList.add(`search-${dir}`);
 			target.classList.add("active");
+		    target.addEventListener("click", ()=>{ 
+				//alert("Hello World!"); 
+				window.location.href = "pages/"+target.dataset.title +"/"+target.dataset.title+".html";
+			});
+			//target.removeEventListener('click', a);
+			// target.addEventListener('click',()=>{
+			// 	if('active' in target.classList){
+			// 		window.location.href = 'https://exampleURL.com/';
+			// 	}
+			// });
 			playSfx("pipe");
+			//alert('hello');
 		},
 		duration,
 		dir,
@@ -140,12 +153,20 @@ const pipeHandler = () => {
 // setup timeline
 timeline.forEach((event, index) => {
 	const e = document.createElement("div");
+	//const ea=window.getComputedStyle(e,"::after");
+	//const anchor = document.createElement("a");
+	//e.href="pages/Events/Events.html";
+	// e.appendChild(anchor)
+	//anchor.title=event.title;
 	e.classList.add("event");
 	e.dataset.index = index;
 	e.dataset.title = event.title;
+	//ea.style.color='red';
+	//e.dataset.title=anchor;
 	e.dataset.month = event.month_name;
 	eventsContainer.appendChild(e);
 	e.addEventListener("click", pipeHandler.bind(this));
+	
 });
 
 /**
@@ -197,3 +218,8 @@ loadBuffers(
 	],
 	["jump", "pipe"]
 );
+
+
+// crosslinking pages
+// const activeContainer = document.getElementById("active");
+// activeContainer.setAttribute("href", "pages/Events/Events.html");
