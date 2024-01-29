@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* utility font classes */
+  .minecraft-font {
+    font-family: "Press Start 2P";
+  }
+  .wavy-font {
+    font-family: "Dancing Script", cursive;
+  }
+  
+  html,
+  body {
+    background-image: url("img/bg.jpeg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #00040f;
+    height: 100%;
+  }
+  
+  /* home page image */
+  .imagecontainer {
+    height: 100%;
+    display: flex;
+    background-image: url("img/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper-heading {
+    position: relative;
+    display: inline-block;
+    margin: 35px auto;
+  }
+  .header-wrap {
+    display: block;
+    width: auto;
+    height: auto;
+    padding-top: 20vh;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    letter-spacing: 1.5vh;
+    user-select: none;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #3168d8, 0 2px 0 #2e64d2, 0 3px 0 #2b60cc,
+      0 4px 0 #285cc6, 0 5px 0 #2558c0, 0 6px 0 #2254ba, 0 7px 0 #1f50b4,
+      0 8px 0 #1c4caf, 0 9px 0 #1948a9, 0 10px 0 #1644a3, 0 11px 0 #13409d,
+      0 12px 0 #1c4aa5cf, 0 13px 0 #0d3891, 0 14px 0 #0a348b, 0 15px 0 #073085,
+      0 22px 30px rgba(121, 0, 255, 0.9), 0 22px 30px rgba(121, 0, 255, 0.9),
+      0 22px 15px rgba(121, 0, 255, 0.9), 0 11px 15px rgba(140, 41, 253, 0.91),
+      0 15px 20px rgba(121, 0, 255, 0.9), 0 15px 11px rgba(121, 0, 255, 0.9),
+      0 16px 11px rgba(121, 0, 255, 0.9);
+  
+    transition: text-shadow 0.3s ease 0.3s, transform 0.3s ease 0.3s,
+      letter-spacing 0.3s ease 0.3s;
+  
+    &:hover {
+      transition: text-shadow 0.33s ease, transform 0.3s ease,
+        letter-spacing 0.3s ease;
+      text-shadow: 0 0 0 #004134, 0 1px 0 #00483b, 0 2px 0 #003528,
+        0 3px 3px rgba(0, 0, 0, 0.9);
+      transform: translate(0px, 15px) perspective(200px) rotateX(10deg);
+      letter-spacing: 0.125em;
+    }
+  }
+  
+  #start-btn-wrap {
+    display: block;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin-top: 14vh;
+    padding: 0.9vh 0.5vh 0.4vh 0.5vh;
+    transform: perspective(200px) rotateX(20deg);
+    background-color: transparent;
+    border: none;
+    border: 1px solid grey;
+    z-index: 3;
+    border-radius: 10%;
+    transition: border-radius 0.5s, transform 1s;
+  }
+  #start-btn {
+    border: none;
+    background-color: rgb(100, 144, 55);
+    font-family: "Press Start 2P", cursive;
+    font-size: 2em;
+    color: white;
+    padding: 10px 7px 6px 11px;
+    text-decoration: none;
+    border-radius: 10%;
+    transition: border-radius 0.5s, background-color 2s;
+  }
+  
+  #start-btn-wrap:hover {
+    border-radius: 0%;
+    transform: rotateX(0deg);
+  }
+  
+  #start-btn:hover {
+    background-color: white;
+    color: rgb(100, 144, 55);
+  }
+  
+  ul li:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  ul.our-team li:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  ul.our-team li:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  ul.our-team li:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  ul.our-team li:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  ul.our-team li:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  
+  ul.our-team li:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  
+  @media screen and (max-width: 980px) {
+    ul.our-team li {
+      font-size: 35px;
+      letter-spacing: 0;
+    }
+  }
+  /* teams */
+  .teams-container {
+    background-position: center;
+    display: grid;
+    padding-bottom: 50px;
+  }
+  
+  .grid-items {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  .team {
+    z-index: 2;
+  }
+  
+  /* animation behind team name */
+  @keyframes a3 {
+    25% {
+      background-position: 0 0, 100% 100%, 100% calc(100% - 5px);
+    }
+    50% {
+      background-position: 0 100%, 100% 100%, 0 calc(100% - 5px);
+    }
+    75% {
+      background-position: 0 100%, 100% 0, 100% 5px;
+    }
+  }
+  
+  @keyframes a5-1 {
+    0% {
+      clip-path: polygon(
+        50% 50%,
+        100% 0,
+        100% 0,
+        0 0,
+        0 100%,
+        100% 100%,
+        100% 100%
+      );
+    }
+    100% {
+      clip-path: polygon(
+        50% 50%,
+        100% 65%,
+        100% 0,
+        0 0,
+        0 100%,
+        100% 100%,
+        100% 35%
+      );
+    }
+  }
+  
+  @keyframes a5-2 {
+    100% {
+      transform: translate(90px);
+    }
+  }
+  
+  @keyframes a5-0 {
+    100% {
+      background-size: 120% 100%, 20% 100%;
+    }
+  }
+  
+  .team h1 {
+    font-family: "Press Start 2P", sans-serif;
+    text-shadow: 0 2px 5px greenyellow;
+    text-align: center;
+    color: honeydew;
+    font-size: 3.5vmax;
+    margin: 8vmax 0 5vmax 0;
+  
+    background: linear-gradient(#ffffff 0 0) 0 0/8px 20px,
+      linear-gradient(#ffffff 0 0) 100% 0/8px 20px,
+      radial-gradient(farthest-side, yellow 90%, #0000) 0 5px/8px 8px content-box,
+      #000;
+    animation: a3 4s infinite linear;
+    outline: 1px solid grey;
+    outline-offset: 7px;
+    background-repeat: no-repeat;
+  }
+  
+  /* team cards */
+  div.card-team {
+    padding: 4.5vmax 0;
+  }
+  .card {
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-top-color: rgb(255, 0, 128) !important;
+    border-left-color: rgb(17, 226, 216) !important;
+    border-right-color: #00ff00 !important;
+    border-bottom-color: rgb(248, 233, 24) !important;
+    background-color: #00040f44 !important;
+    color: white;
+  }
+  .card:hover {
+    transform: scale(1.1) !important;
+    transition: 5ms !important;
+    border: conic-gradient(#144207, #f0e15a, #a9224d) !important;
+    animation: rotate 1s linear infinite !important;
+    border-width: 5px !important;
+  }
+  .card::after {
+    filter: blur(10rem) !important;
+    background: conic-gradient(#144207, #f0e15a, #a9224d) !important;
+    z-index: -1 !important;
+    inset: -0.5rem !important;
+  }
+  
+  .card-body {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  .card-body::backdrop {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(61, 54, 54, 0.4);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+  }
+  
+  .circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+  
+  .circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+  
+  .circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  
+  .circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+  }
+  
+  .circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+  }
+  
+  .circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+  
+  .circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+  
+  .circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+    }
+  
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+  
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 555px) {
+    .imagecontainer {
+      background-position: left;
+    }
+  }
