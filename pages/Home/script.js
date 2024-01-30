@@ -128,10 +128,12 @@ const pipeHandler = () => {
 			mario.classList.add(`search-${dir}`);
 			target.classList.add("active");
 		    target.addEventListener("click", ()=>{ 
-				//alert("Hello World!"); 
 				window.location.href = "pages/"+target.dataset.title +"/"+target.dataset.title+".html";
-			});
-			//target.removeEventListener('click', a);
+			} , true);
+			// currentPip.removeEventListener("click", ()=>{ 
+			// 	window.location.href = "pages/"+target.dataset.title +"/"+target.dataset.title+".html";
+			// } , true);
+			//target.removeEventListener('click', temp);
 			// target.addEventListener('click',()=>{
 			// 	if('active' in target.classList){
 			// 		window.location.href = 'https://exampleURL.com/';
