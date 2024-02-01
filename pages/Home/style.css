@@ -528,6 +528,18 @@ body {
 
   /* top: 15%; */
 }
+
+.about-section h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  font-family: sans-serif;
+  text-shadow: 0 2px 5px greenyellow;
+  color: honeydew;
+
+  /* top: 15%; */
+}
 .about-section .all-sections {
   display: flex;
   justify-content: space-evenly;
@@ -656,6 +668,12 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.about-section .who-am-i .all-who h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .about-section .who-am-i .all-who .div-para {
   width: 80%;
   position: relative;
@@ -677,7 +695,7 @@ body {
   font-size: 16px;
 
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 .about-section .who-am-i .all-who button {
   position: relative;
