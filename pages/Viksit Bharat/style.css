@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 96vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    font-family: JetBrains Mono, monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.pageHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    margin-top: 2.5rem;
+}
+
+.neons {
+    font-size: 3rem;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.neons h1 {
+    padding-top: 1rem;
+    /* padding-left: 3rem; */
+    font-size: 3rem;
+    text-decoration: none;
+    color: #4d07f0;
+    text-align: center;
+    position: relative;
+}
+
+.neons {
+    font-size: 3rem;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.neons h1 {
+    padding-top: 1rem;
+    /* padding-left: 3rem; */
+    font-size: 3rem;
+    text-decoration: none;
+    color: #4807d3de;
+    text-align: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 930px) {
+    .neons h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .neons h1 {
+        font-size: 3rem;
+    }
+
+    .contained h1 {
+        font-size: 28px;
+    }
+
+    h1 {
+        padding-top: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .neons h1 {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .neons h1 {
+        font-size: 55%;
+    }
+
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section{
+  background: url(./v613-taus-12-urbangradientbackground.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+/*section-4 css*/
+
+.section-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec4-video {
+    display: block;
+    margin-left: 8%;
+    width: 75%;
+    padding: 50px 10px;
+}
+
+.row-sec4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sec4-para {
+    /* text-align: center; */
+    text-justify: center;
+    /* margin-top: 15%; */
+    /* margin-top: 35%; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 2%; */
+    font-size: 40%;
+    width: 50vw;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffce91a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
+    font-weight: 400;
+}
+
+
+@media (max-width: 800px) {
+    .section-4 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sec4-para {
+        margin-top: -23%;
+        font-size: 30%;
+        margin-left: 18%;
+        text-align: justify;
+        text-justify: distribute;
+        /* width: 50%; */
+    }
+
+    .sec4-video {
+        /*    margin-top: 20px;*/
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+        width: 75%;
+        /* padding-left: 30px; */
+    }
+
+    .col-sm-7{
+        margin-top: 4rem;
+    }
+
+    /*.row-sec4
+  {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }*/
+}
+
+
+
+@media (max-width: 800px) {
+    .section-4 {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sec4-para {
+        /* margin-top: 25%; */
+        font-size: 35%;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        /*width: fit-content;*/
+        width: 98%;
+        height: auto;
+        padding: 12% 0%;
+        padding-right: 28%;
+    }
+
+    .row-sec4 {
+        flex-direction: column;
+        padding-bottom: 50px;
+        /* margin-bottom: 100px; */
+    }
+
+    .sec4-video {
+        flex-direction: row;
+        margin-left: 15%;
+
+    }
+
+}
+ 
+ 
