@@ -8,6 +8,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function showDay(day) {
     // Hide all events
+    let styles=` 
+    --background-color: #005aff;
+    --background-color-dark: #002d81; 
+    background-color: var(--background-color);
+    box-shadow: 6px 6px 0 var(--background-color-dark);`
+
+    let stylesInvert=` 
+    --background-color: #005aff;
+    --background-color-dark: #002d81; 
+    background-color: var(--background-color-dark);
+    box-shadow: 6px 6px 0 var(--background-color);`
+
+    if(day=='day1'){
+        document.getElementById('button-day2').style=styles;
+    }else{
+        document.getElementById('button-day1').style=styles;
+    }
+
+    document.getElementById('button-'+day).style=stylesInvert;
+
     document.querySelectorAll('.timeline__event').forEach(event => {
         event.classList.add('hidden');
     });

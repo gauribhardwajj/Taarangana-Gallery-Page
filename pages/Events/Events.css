@@ -141,8 +141,8 @@ h1 {
   right: auto;
   z-index: -1;
   transform: translateX(-50%);
-  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-  animation: fillTop 2s forwards 4s ease-in-out;
+  -webkit-animation: fillTop 1s forwards 2s ease-in-out;
+  animation: fillTop 1s forwards 2s ease-in-out;
 }
 .timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
   content: "";
@@ -155,8 +155,8 @@ h1 {
   top: 50%;
   left: auto;
   transform: translateY(-50%);
-  -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
-  animation: fillLeft 2s forwards 4s ease-in-out;
+  -webkit-animation: fillLeft 1s forwards 2s ease-in-out;
+  animation: fillLeft 1s forwards 2s ease-in-out;
 }
 .timeline__event__title {
   font-size: 1.2rem;
@@ -217,7 +217,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-  animation: fillTop 2s forwards 4s ease-in-out;
+  animation: fillTop 1s forwards 2s ease-in-out;
 }
 .timeline__event__icon:after {
   content: "";
@@ -229,8 +229,8 @@ h1 {
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
-  animation: fillLeftOdd 2s forwards 4s ease-in-out;
+  -webkit-animation: fillLeftOdd 1s forwards 2s ease-in-out;
+  animation: fillLeftOdd 1s forwards 2s ease-in-out;
 }
 .timeline__event__description {
   flex-basis: 100%;
@@ -835,3 +835,55 @@ a:hover
     background: rgb(209, 3, 3);
   }
 /* nav section ends */
+
+
+/* footer */
+
+#socialbar1{
+
+  /* border: solid black;
+  border-color: wheat; */
+  
+  border-width: 3px 3px 5px 5px;
+  border-top: 0.2px solid grey;
+  background-color: black ;
+ 
+}
+
+#socialbar1 a i {
+  color: whitesmoke;
+  padding: 5px;
+}
+
+#socialbar1 div{
+  text-align: center;
+}
+
+#socialbar1 svg{
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+#socialbar1 svg :hover{
+  background: white;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+a:active {
+  text-decoration: underline;
+}
