@@ -1,0 +1,352 @@
+/* @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 96vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    font-family: JetBrains Mono, monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.pageHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    margin-top: 2.5rem;
+}
+
+.neons {
+    font-size: 3rem;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.neons h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #4d07f0;
+    text-align: center;
+    position: relative;
+}
+
+.neons {
+    font-size: 3rem;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.neons h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #4807d3de;
+    text-align: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 930px) {
+    .neons h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .neons h1 {
+        font-size: 3rem;
+    }
+
+    .contained h1 {
+        font-size: 28px;
+    }
+
+    h1 {
+        padding-top: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .neons h1 {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .neons h1 {
+        font-size: 55%;
+    }
+
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec4-video {
+    display: block;
+    margin-left: 8%;
+    width: 75%;
+    padding: 50px 10px;
+}
+
+.row-sec4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sec4-para {
+    text-justify: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40%;
+    width: 50vw;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffce91a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
+    font-weight: 400;
+}
+
+
+@media (max-width: 800px) {
+    .section-4 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sec4-para {
+        margin-top: -23%;
+        font-size: 30%;
+        margin-left: 18%;
+        text-align: justify;
+        text-justify: distribute;
+    }
+
+    .sec4-video {
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+        width: 75%;
+    }
+
+    .col-sm-7{
+        margin-top: 4rem;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .section-4 {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sec4-para {
+        font-size: 35%;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        width: 98%;
+        height: auto;
+        padding: 12% 0%;
+        padding-right: 28%;
+    }
+
+    .row-sec4 {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .sec4-video {
+        flex-direction: row;
+        margin-left: 15%;
+
+    }
+
+}
+  */
+
+/* custom font from google fonts */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); */
+
+/* Basic styling and positioning of elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* color: #fff7f7; */
+    
+    font-size: 16px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#some-box {
+    /* background: url(./v613-taus-12-urbangradientbackground.jpg); */
+    padding: 40px 0px 80px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+#some-box h1 {
+    text-align: center;
+    font-family: 'Press Start 2P';
+    justify-content: center;
+    align-items: center;
+    color: #ffc600;
+}
+
+#some-box h3 {
+    font-size: 26px;
+}
+
+#some-box a {
+    color: #70BCB8;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+#some-box a:hover {
+    color: #8E7BB2;
+}
+
+article.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+article.row div {
+    width: 49.4%;
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffe49fa3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
+    
+    /* border: 1px solid white; */
+}
+
+/**** For your reference ****/
+/* article.row {
+    border: 1px solid white;
+} */
+
+/* article.row:hover {border:1px solid yellow;} */
+/* article.row div:hover {border:1px solid green;} */
+/* Your divs won't expand to contain absolute positioned images */
+
+
+#idea-one img {
+    position: absolute;
+    /* top: 50%; */
+    bottom: 12rem;
+    left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Here's the column repositioning magic. This media query says "Apply these styles only until page width is greater than 750px" 
+
+***To make this work, your media query has to be beneath your other styles to keep it from being overwritten later on by your general styles*** */
+@media(max-width:750px) {
+
+    /* This resizes the divs that contain your content to fill the width of the page so that they stack vertically */
+    article.row div {
+        min-width: 300px;
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+        display: block;
+    }
+
+    /* Center your text */
+    #some-other-box h3 {
+        text-align: center;
+    }
+
+    /* Center your image */
+    #idea-one img,
+    #idea-two img,
+    #idea-three img {
+        position: relative;
+        margin: auto;
+        left: inherit;
+        bottom: inherit;
+    }
+
+    /* This tells the browswer to stack the content vertically */
+    #idea-two {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+
+    /* This tells the browswer to draw the first box (div:first-of-type) within our stacked content block (identified in the previous rule) in the second position ([...]box-ordinal-group:2;)
+  This gives us a nice arrangement of alternating text and images, and allows us two have a custom layout for smaller or wider screens.*/
+    #idea-two div:first-of-type {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+    }
+}
+
+/*
+If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-type{[...]group:2;} and div:nth-of-type(2) {[...]group:3;}, and so on.
+  */
