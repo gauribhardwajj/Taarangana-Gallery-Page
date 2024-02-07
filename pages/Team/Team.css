@@ -382,7 +382,7 @@ div.card-team {
 /* nav section starts here */
 .container-nav{
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   /* padding-top: 30px;
   right: 8%; */
   top: 5%;
