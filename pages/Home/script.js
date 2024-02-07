@@ -27,9 +27,9 @@ const timeline = [
 	{ 
 		year: 2019, 
 	    month: 4, 
-		month_name: "Vikisit Bharat@2047", 
-		title: "Vikisit Bharat@2047" 
-	// },
+		month_name: "Viksit Bharat", 
+		title: "Viksit Bharat" 
+	 },
 	// {
 	// 	year: 2018,
 	// 	month: 11,
@@ -71,7 +71,7 @@ const timeline = [
 	// 	month: 11,
 	// 	month_name: "2012",
 	// 	title: "Taarangana 2012"
-	}
+	
 ];
 
 //

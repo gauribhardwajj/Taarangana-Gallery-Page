@@ -235,7 +235,7 @@ body {
 }
 #some-box {
     /* background: url(./v613-taus-12-urbangradientbackground.jpg); */
-    padding: 40px 0px 80px;
+    padding: 80px 0px 40px;
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -246,6 +246,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #ffc600;
+    text-shadow: 0px 1px #060349, 1px 2px #060349, 2px 2px #060349, 3px 3px #060349, 3px 4px #2218f0, 8px 9px rgba(0, 0, 0, 0.1);
 }
 
 #some-box h3 {
@@ -276,9 +277,10 @@ article.row div {
     position: relative;
     color: #ffffff;
     text-shadow: 0 0 5px #ffe49fa3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
-    
     /* border: 1px solid white; */
 }
+
+
 
 /**** For your reference ****/
 /* article.row {
@@ -297,6 +299,8 @@ article.row div {
     left: 50px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
+    /* box-shadow: 0px 2px  #ffc600  ; */
 }
 
 /* Here's the column repositioning magic. This media query says "Apply these styles only until page width is greater than 750px" 
@@ -350,3 +354,205 @@ article.row div {
 /*
 If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-type{[...]group:2;} and div:nth-of-type(2) {[...]group:3;}, and so on.
   */
+
+
+  
+/* nav section starts here */
+.container-nav{
+    cursor: pointer;
+    position: absolute;
+    /* padding-top: 30px;
+    right: 8%; */
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+  }
+  
+  .bars{
+    width: 40px;
+    height: 6px;
+    background: #ffffff;
+    animation:shine_border 3s ease-in-out alternate infinite;
+    box-shadow: 0px 1px #e52521, 1px 2px #e52521, 2px 2px #e52521, 3px 3px #e52521, 3px 4px #e52521, 8px 9px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bars::before,
+  .bars::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background: #ffffff;
+    animation:shine_border 3s ease-in-out alternate infinite;
+    box-shadow: 0px 1px #e52521, 1px 2px #e52521, 2px 2px #e52521, 3px 3px #e52521, 3px 4px #e52521, 8px 9px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bars::before{
+    margin-top: 10px;
+  }
+  
+  .bars::after{
+    margin-top: 20px;
+  }
+  
+  .nav_ani{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    right: -200vw;
+    /* position: absolute;
+    width: 100%;
+    height: 0px; */
+    background: rgba(0, 0, 0, 0.863);
+    backdrop-filter: blur(6px);
+     z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .nav_ani ul {
+    list-style: none;
+  }
+  
+  .nav_ani ul li{
+    margin: 50px 0;
+  }
+  
+  .nav_ani ul li a{
+    color: #fafafa;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    font-family: "Press Start 2P";
+  }
+  
+  .nav_ani ul li a:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    bottom: -10px;
+    left: 0;
+    transform-origin: left;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+  }
+  
+  
+  .nav_ani ul li a:hover:after{
+    transform: scaleX(1);
+  }
+  
+  .nav_ani .close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 6%;
+    right: 8%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    /* background: #fff; */
+  }
+  
+  .nav_ani h2{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .nav_ani .close div::before,
+  .nav_ani .close div::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: white;
+    transition: background .5s ease;
+  }
+  .nav_ani .close div::before{
+    transform: rotate(-45deg);
+  }
+  
+  .nav_ani .close div::after{
+    transform: rotate(45deg);
+  }
+  
+  .nav_ani .close:hover div::before,
+  .nav_ani .close:hover div::after{
+      background: rgb(209, 3, 3);
+    }
+  /* nav section ends */
+  
+  /* footer */
+  
+  
+  #socialbar1{
+  
+    /* border: solid black;
+    border-color: wheat; */
+    border-width: 3px 3px 5px 5px;
+    border-top:0.2px solid grey;
+    background-color: black ;
+    color: white;
+   
+  }
+  
+  #socialbar1 div{
+    text-align: center;
+  }
+  
+  #socialbar1 svg{
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.25s;
+  }
+  #socialbar1 svg :hover{
+    background: white;
+    color: black;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  #socialbar1 a i {
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 15px;
+  }
+  

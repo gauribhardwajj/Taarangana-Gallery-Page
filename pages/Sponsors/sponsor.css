@@ -595,3 +595,60 @@ h1 {
     background: rgb(209, 3, 3);
   }
 /* nav section ends */
+
+
+/* footer */
+
+
+#socialbar1{
+  
+  /* border: solid black;
+  border-color: wheat; */
+  border-width: 3px 3px 5px 5px;
+  border-top:0.2px solid grey;
+  background-color: black ;
+  color: white;
+  z-index: 1;
+  
+
+ 
+}
+
+#socialbar1 div{
+  text-align: center;
+}
+
+#socialbar1 svg{
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+#socialbar1 svg :hover{
+  background: white;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+#socialbar1 a i {
+  color: whitesmoke;
+  padding: 5px;
+  font-size: 15px;
+}

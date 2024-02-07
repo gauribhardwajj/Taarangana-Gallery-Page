@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viksit Bharat</title>
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="container-nav">
+            <div class="bars"></div>
+        </div>
+        <nav class="nav_ani" id="nav_ani">
+            <!-- <h2>TAARANGANA</h2> -->
+            <div class="close">
+                <div></div>
+            </div>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="../Events/Events.html">Events Schedule</a></li>
+            <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+            <li><a href="../Sponsors/Sponsors.html">Sponsors</a></li>
+            <li><a href="../Team/Team.html">Meet Our Team</a></li>
+            <li><a href="../Viksit Bharat/Viksit Bharat.html">Viksit Bharat</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="particles_-_323 (Original).mp4" type="video/mp4">
+      </video>
+    <div id="some-box">
+        <h1>VIKSIT BHARAT @2047</h1>
+
+        <article class="row" id="idea-one">
+            <div><img src="./viksit bharat img (1).jpg" /></div>
+            <div class="text-data">
+                <!-- <h3>Idea 1</h3> -->
+                <p>At the forefront of change and progress, Viksit Bharat stands as a guiding force, driving development
+                    across different parts of our nation. Serving as a catalyst for growth within our borders, Viksit
+                    Bharat takes a comprehensive approach to foster progress.
+                </p>
+                <p>The mission of Viksit Bharat resonates with the idea of a cultural revival, aiming to blend timeless
+                    values with modern aspirations. This dynamic movement recognizes the importance of including
+                    everyone in development, working to spread progress to every part of our diverse country. In line
+                    with the G20's commitment to global financial stability and sustainable development, Viksit Bharat
+                    ambitiously seeks to build a united and flourishing society.
+                </p>
+                <p>Taarangana'24 embraces the fundamental values of Viksit Bharat, aiming to foster innovation,
+                    education, and socio-economic well-being. This cultural extravaganza acts as a platform to share the
+                    principles of Viksit Bharat, creating an environment where cultural expression seamlessly
+                    intertwines with progress. Through these efforts, we aim to instill a deep sense of pride in our
+                    cultural heritage, steering our nation towards a brighter and more developed future. “Viksit Bharat
+                    – the crossroads where culture converges with progress, and traditions pave the way for a
+                    flourishing tomorrow.”
+                </p>
+
+                <a href="https://viksitbharatsankalp.gov.in/">Link to read more</a>
+            </div>
+        </article>
+
+    </div>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="particles_-_323 (Original).mp4" type="video/mp4">
+      </video>
+    <div class="neons pageHeading">
+        <h1>VIKSIT BHARAT @2047</h1>
+    </div>
+    <section class="section-4" id="section4">
+        <div class="row-sec4">
+            <div class="col-sm-5">
+                <img src="./images/viksit-2.png" alt="" class="sec4-video">
+                
+            </div>
+            <div class="col-sm-7">
+                <p class="sec4-para">
+                    At the forefront of change and progress, Viksit Bharat stands as a guiding force, driving
+                    development across different parts of our nation. Serving as a catalyst for growth within our
+                    borders, Viksit Bharat takes a comprehensive approach to foster progress.
+                </p>
+                <p class="sec4-para">
+                    The mission of Viksit Bharat resonates with the idea of a cultural revival, aiming to blend timeless
+                    values with modern aspirations. This dynamic movement recognizes the importance of including
+                    everyone in development, working to spread progress to every part of our diverse country. In line
+                    with the G20's commitment to global financial stability and sustainable development, Viksit Bharat
+                    ambitiously seeks to build a united and flourishing society.
+                </p>
+                <p class="sec4-para">
+                    Taarangana'24 embraces the fundamental values of Viksit Bharat, aiming to foster innovation,
+                    education, and socio-economic well-being. This cultural extravaganza acts as a platform to share the
+                    principles of Viksit Bharat, creating an environment where cultural expression seamlessly
+                    intertwines with progress. Through these efforts, we aim to instill a deep sense of pride in our
+                    cultural heritage, steering our nation towards a brighter and more developed future. “Viksit Bharat
+                    – the crossroads where culture converges with progress, and traditions pave the way for a
+                    flourishing tomorrow.”
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </section> -->
+
+    
+  <div id="socialbar1">
+    <div>
+      <a href="https://www.facebook.com/taarangana/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/taarangana?igshid=YmMyMTA2M2Y"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/Taarangana_?t=s_IseuyL0cHUZlDhVp_WGg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://youtube.com/c/TaaranganaIGDTUW"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:taarangana2024@gmail.com"> <i class="fa fa-envelope"></i> </a>
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/d5cff1149c.js" crossorigin="anonymous"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+<script type="text/javascript">
+    
+    const open = document.querySelector('.container-nav');
+    const close = document.querySelector('.close');
+    var tl = gsap.timeline({ defaults: { duration: 0.2, ease: 'expo.inOut' } });
+    open.addEventListener('click', () => {
+      if (tl.reversed()) {
+        tl.play();
+      } else {
+        tl.to('.nav_ani', { right: 0 })
+          .to('.nav_ani', { height: '100vh' }, '-=.1')
+          .to('.nav_ani ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
+          .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+          .to('.nav_ani h2', { opacity: 1 }, '-=1');
+      }
+    });
+
+    close.addEventListener('click', () => {
+      tl.reverse();
+    });
+  </script>
+
+
+</body>
+
+</html>
